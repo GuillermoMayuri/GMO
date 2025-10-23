@@ -65,28 +65,25 @@
   </section>
 
 <!-- ✅ Add this block to REQUEST seccion -->
-  <section id="bid">
-    <h3>Request a Bid</h3>
-    <form action="https://formsubmit.xx/GGLLCJomeque@yahoo.com" method="POST">
-  	<label for="name">Name / Nombre:</label><br>
-	<input type="text" id="name" name="name" required><br><br>
+  <!-- REQUEST section: change form action to formsubmit.co (example) -->
+<section id="bid">
+  <h3>Request a Bid</h3>
+  <form action="https://formsubmit.co/GGLLCJomeque@yahoo.com" method="POST">
+    <label for="name">Name / Nombre:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
 
-	<label for="email">Email / Correo electrónico:</label><br>
-	<input type="email" id="email" name="email" required><br><br>
+    <label for="email">Email / Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
-  	<label for="message">Message / Mensaje:</label><br>
-	<textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <label for="message">Message / Mensaje:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
-	<!-- Optional: redirect after submission -->
-	<input type="hidden" name="_next" value="https://ggllc.org/thank-you.html">
+    <input type="hidden" name="_next" value="https://ggllc.org/thank-you.html">
+    <input type="hidden" name="_captcha" value="false">
 
-	<!-- Optional: disable CAPTCHA -->
-	<input type="hidden" name="_captcha" value="false">
-
-  	<button type="submit">Send / Enviar</button>
-   </form>
-
-  </section>
+    <button type="submit">Send / Enviar</button>
+  </form>
+</section>
 
 <!-- ✅ Add in this block is the ABOUT seccion </p> -->
   <section id="about">
@@ -127,6 +124,7 @@
 <!-- ✅ Add pictures to this script to appear when SCROLL PICTURES -->
 
 <script>
+
   const images = [
     "images/portfolio-1.jpg",
     "images/portfolio-2.jpg",
@@ -200,25 +198,12 @@
     "images/portfolio-70.jpg",
     "images/portfolio-71.jpg",
     "images/portfolio-72.jpg",
-    "images/portfolio-73.Jpg",
-    "images/portfolio-74.Jpg"
+    "images/portfolio-73.jpg",
+    "images/portfolio-74.jpg"
   ];
- 
-<!-- ✅ Add this block inside the script to ENABLE ARROW KEY PICTURES NAVEGATION -->
 
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "ArrowRight") {
-      currentIndex = (currentIndex + 1) % images.length;
-      showImage(currentIndex);
-    } else if (event.key === "ArrowLeft") {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage(currentIndex);
-    }
- });
-
-<!-- ✅ Add this block inside the script to ENABLE MOUSE CLICK PICTURES NAVEGATION -->
-
- let currentIndex = 0;
+  // Initialize before adding event listeners
+  let currentIndex = 0;
   const portfolioImage = document.getElementById("portfolioImage");
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
@@ -227,6 +212,18 @@
     portfolioImage.src = images[index];
   }
 
+  // Keyboard navigation (now safe because currentIndex is defined)
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowRight") {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    } else if (event.key === "ArrowLeft") {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    }
+  });
+
+  // Mouse click navigation
   prevBtn.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     showImage(currentIndex);
@@ -237,6 +234,9 @@
     showImage(currentIndex);
   });
 
+  // Initialize display
+  showImage(currentIndex);
+ 
 </script>
 
 <!-- ✅ Add this block & script to enable BACK TO THE TOP BUTTON -->
