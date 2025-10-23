@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GGLLC | Kansas City Repairs & Renovations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ✅ this rutine is for the BUTTONS to SEND to diferent SECCIONS of the same webpage -->
+  <header class="hero">
+    <nav>
+      <h1>GGLLC</h1>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#bid">Bid Request</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+<!-- ✅ this runtin is SECONDARY SECCION -->      
+    <div class="hero-content">
+
+<!-- ✅ this line show SUB TITLE -->      
+      <h2>Kansas City's Trusted Partner for Institutional Repairs & Renovations</h2>
+
+<!-- ✅ this line SEND TO RECUEST section -->
+      <a href="#bid" class="cta-button">Request a Bid</a>
+
+<!-- ✅ this rutine show BANNERS -->
+      <div class="client-logos">
+        <img src="images/logo-kcmo.png" alt="KCMO" />
+        <img src="images/logo-habitat.png" alt="Habitat" />
+        <img src="images/logo-nni.png" alt="NNI" />
+        <img src="images/logo-WestSide.png" alt="WS" />
+        <img src="images/logo-childrensmercy.png" alt="Children’s Mercy" />
+      </div>
+    </div>
+  </header>
+
+<!-- ✅ Add this block is SERVICE seccion -->
+  <section id="services">
+    <h3>Services</h3>
+    <div class="service-grid">
+      <div><img src="images/electrical.jpg" alt="Electrical" /><p>Electrical Service</p></div>
+      <div><img src="images/plumbing.jpg" alt="Plumbing" /><p>Plumbing Repairs</p></div>
+      <div><img src="images/hvac.jpg" alt="HVAC" /><p>HVAC Installation</p></div>
+      <div><img src="images/roofing.jpg" alt="Roofing" /><p>Roofing & Gutters</p></div>
+      <div><img src="images/ADABathroom.jpg" alt="ADABathroom" /><p>ADABathroom</p></div>
+      <div><img src="images/concrete.jpg" alt="Concrete" /><p>Concrete Sidewalks & Driveways</p></div>
+    </div>
+  </section>
+
+<!-- ✅ This block PORTFOLIO stablish the scrool rutine for pictures -->
+  <section id="portfolio">
+    <h3>Portfolio</h3>
+    <div class="carousel">
+       <button class="nav-button" id="prevBtn">&#10094;</button>
+       <img id="portfolioImage" src="images/portfolio-1.jpg" alt="Project Image" />
+       <button class="nav-button" id="nextBtn">&#10095;</button>
+    </div>
+  </section>
+
+<!-- ✅ Add this block to REQUEST seccion -->
+  <section id="bid">
+    <h3>Request a Bid</h3>
+    <form action="https://formsubmit.xx/GGLLCJomeque@yahoo.com" method="POST">
+  	<label for="name">Name / Nombre:</label><br>
+	<input type="text" id="name" name="name" required><br><br>
+
+	<label for="email">Email / Correo electrónico:</label><br>
+	<input type="email" id="email" name="email" required><br><br>
+
+  	<label for="message">Message / Mensaje:</label><br>
+	<textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+	<!-- Optional: redirect after submission -->
+	<input type="hidden" name="_next" value="https://ggllc.org/thank-you.html">
+
+	<!-- Optional: disable CAPTCHA -->
+	<input type="hidden" name="_captcha" value="false">
+
+  	<button type="submit">Send / Enviar</button>
+   </form>
+
+  </section>
+
+<!-- ✅ Add in this block is the ABOUT seccion </p> -->
+  <section id="about">
+    <h3>About GGLLC</h3>
+    <p>We specialize in institutional repairs for Kansas City programs, nonprofits, and property managers. Our team is licensed, insured, and bilingual (English/Spanish).</p>
+    <p>KCMO, KCK, Johnson County and other cites, General Contractor Class "A".</p>
+    <p>KCMO, KCK, Johnson County, Topeka and other cites, General Contractor Class "DE".</p>
+    <p>KCMO, KCK, Johnson County, Topeka and other cites, General Contractor Class "DP".</p>
+    <p>KCMO, KCK, Johnson County, Topeka and other cites, General Contractor Class "DM".</p>
+    <p>FLORIDA Certify General Contractor License.</p>
+    <p>Lead Paint Removal Certify.</p>
+    <p>EPA section 608 certified.</p>
+    <p>KDOT EEO Policy and Affirmative Action Policy.</p>
+    <p>DBE Certificate's with City of Kansas City Missouri Human Relations.</p>
+    <p>MBE Certificate's with City of Kansas City Missouri Human Relations.</p>
+    <p>SLBE Certificate's with City of Kansas City Missouri Human Relations.</p>
+    <p>WBE Certificate's with City of Kansas City Missouri Human Relations.</p>
+    <p>DBE Certificate listed in the Missouri Regional Certification Committee.</p>
+    <p>SAM.GOV Registration ACTIVE.</p>
+    <p>NAICS 236118 Construction Management, Residential Remodeling.</p>
+    <p>NAICS 236220 Construction Management, Commercial and Institutional Building.</p>
+    <p>NAICS 238210 Electrical Contractors and Other Wiring Installation Contractors.</p>
+    <p>NAICS 238220 Plumbing, Heating & Air-Conditioning Contractors.</p>
+  </section>
+
+<!-- ✅ Add in this block is the CONTACT seccion </p> -->
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>GGLLC</p>
+    <p>Email: GGLLCJomeque@Yahoo.com | Phone: (816) 808-9863</p>
+  </section>
+
+<!-- ✅ Add in this block is the FOOTER seccion </p> -->
+ <footer>
+    <p>&copy; 2025 GGLLC. All rights reserved.</p>
+  </footer>
+
+<!-- ✅ Add pictures to this script to appear when SCROLL PICTURES -->
+
+<script>
+  const images = [
+    "images/portfolio-1.jpg",
+    "images/portfolio-2.jpg",
+    "images/portfolio-3.jpg",
+    "images/portfolio-4.jpg",
+    "images/portfolio-5.jpg",
+    "images/portfolio-6.jpg",
+    "images/portfolio-7.jpg",
+    "images/portfolio-8.jpg",
+    "images/portfolio-9.jpg",
+    "images/portfolio-10.jpg",
+    "images/portfolio-11.jpg",
+    "images/portfolio-12.jpg",
+    "images/portfolio-13.jpg",
+    "images/portfolio-14.jpg",
+    "images/portfolio-15.jpg",
+    "images/portfolio-16.jpg",
+    "images/portfolio-17.jpg",
+    "images/portfolio-18.jpg",
+    "images/portfolio-19.jpg",
+    "images/portfolio-20.jpg",
+    "images/portfolio-21.jpg",
+    "images/portfolio-22.jpg",
+    "images/portfolio-23.jpg",
+    "images/portfolio-24.jpg",
+    "images/portfolio-25.jpg",
+    "images/portfolio-26.jpg",
+    "images/portfolio-27.jpg",
+    "images/portfolio-28.jpg",
+    "images/portfolio-29.jpg",
+    "images/portfolio-30.jpg",
+    "images/portfolio-31.jpg",
+    "images/portfolio-32.jpg",
+    "images/portfolio-33.jpg",
+    "images/portfolio-34.jpg",
+    "images/portfolio-35.jpg",
+    "images/portfolio-36.jpg",
+    "images/portfolio-37.jpg",
+    "images/portfolio-38.jpg",
+    "images/portfolio-39.jpg",
+    "images/portfolio-40.jpg",
+    "images/portfolio-41.jpg",
+    "images/portfolio-42.jpg",
+    "images/portfolio-43.jpg",
+    "images/portfolio-44.jpg",
+    "images/portfolio-45.jpg",
+    "images/portfolio-46.jpg",
+    "images/portfolio-47.jpg",
+    "images/portfolio-48.jpg",
+    "images/portfolio-49.jpg",
+    "images/portfolio-50.jpg",
+    "images/portfolio-51.jpg",
+    "images/portfolio-52.jpg",
+    "images/portfolio-53.jpg",
+    "images/portfolio-54.jpg",
+    "images/portfolio-55.jpg",
+    "images/portfolio-56.jpg",
+    "images/portfolio-57.jpg",
+    "images/portfolio-58.jpg",
+    "images/portfolio-59.jpg",
+    "images/portfolio-60.jpg",
+    "images/portfolio-61.jpg",
+    "images/portfolio-62.jpg",
+    "images/portfolio-63.jpg",
+    "images/portfolio-64.jpg",
+    "images/portfolio-65.jpg",
+    "images/portfolio-66.jpg",
+    "images/portfolio-67.jpg",
+    "images/portfolio-68.jpg",
+    "images/portfolio-69.jpg",
+    "images/portfolio-70.jpg",
+    "images/portfolio-71.jpg",
+    "images/portfolio-72.jpg",
+    "images/portfolio-73.Jpg",
+    "images/portfolio-74.Jpg"
+  ];
+ 
+<!-- ✅ Add this block inside the script to ENABLE ARROW KEY PICTURES NAVEGATION -->
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowRight") {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    } else if (event.key === "ArrowLeft") {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    }
+ });
+
+<!-- ✅ Add this block inside the script to ENABLE MOUSE CLICK PICTURES NAVEGATION -->
+
+ let currentIndex = 0;
+  const portfolioImage = document.getElementById("portfolioImage");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  function showImage(index) {
+    portfolioImage.src = images[index];
+  }
+
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
+
+</script>
+
+<!-- ✅ Add this block & script to enable BACK TO THE TOP BUTTON -->
+
+<button id="backToTop" title="Go to top" aria-label="Back to top">↑ Top</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const backToTopBtn = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+</script>
+
+</body>
+</html>
